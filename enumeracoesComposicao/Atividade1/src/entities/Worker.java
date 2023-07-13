@@ -39,11 +39,11 @@ public class Worker {
     public Worker() {
     }
 
-    public Worker(String name, WorkerLevel level, Double baseSalary, Department departmente) {
+    public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
         this.name = name;
         this.level = level;
         this.baseSalary = baseSalary;
-        this.department = departmente;
+        this.department = department;
     }
 
     public String getName() {
@@ -70,12 +70,12 @@ public class Worker {
         this.baseSalary = baseSalary;
     }
 
-    public Department getDepartmente() {
+    public Department getDepartment() {
         return department;
     }
 
-    public void setDepartmente(Department departmente) {
-        this.department = departmente;
+    public void setDepartmente(Department department) {
+        this.department = department;
     }
 
     public List<HourContract> getContracts() {
