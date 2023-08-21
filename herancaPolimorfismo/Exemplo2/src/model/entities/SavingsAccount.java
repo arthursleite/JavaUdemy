@@ -1,7 +1,7 @@
 package model.entities;
 
-public class SavingsAccount extends Account {
-
+public final class SavingsAccount extends Account {
+//final class nao pode ter subclasse
     private Double interestRate;
 
     public SavingsAccount() {
@@ -25,4 +25,9 @@ public class SavingsAccount extends Account {
         this.interestRate = interestRate;
     }
 
+    @Override
+    public final void withdraw(double amount) {
+//final metodo nao pode ser sobrescrito        
+        balance -= amount;
+    }
 }
